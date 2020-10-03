@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection = "settingKeys")
 data class SettingKey(
         @Id
-        private val id: String? = null,
-        private val key: String,
-        private val defaultValue: String,
-        private val settingValues: List<SettingValue>
+        val id: String? = null,
+        val key: String,
+        val defaultValue: String,
+        val settingValues: List<SettingValue>
 )

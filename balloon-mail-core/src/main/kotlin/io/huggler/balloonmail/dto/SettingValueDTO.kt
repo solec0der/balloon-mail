@@ -6,5 +6,5 @@ import io.swagger.v3.oas.annotations.media.Schema
 data class SettingValueDTO(
 
         @field:Schema(description = "Setting Value")
-        private val value: String
+        val value: String
 )
