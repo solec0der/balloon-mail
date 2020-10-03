@@ -38,7 +38,7 @@ class BalloonMailSecurityConfiguration : KeycloakWebSecurityConfigurerAdapter() 
                 .authorizeRequests()
                 .antMatchers("/public/**").permitAll()
                 .antMatchers("/api/admin/**").hasRole("balloon-mail-admin")
-                .antMatchers("/api/**").hasAnyRole("balloon-mail-user", "balloon-mail-admin")
+                .antMatchers("/api/**").hasAnyRole("balloon-mail-user", "balloon-mail-admin", "omni-board-user")
                 .anyRequest().permitAll()
     }
 }

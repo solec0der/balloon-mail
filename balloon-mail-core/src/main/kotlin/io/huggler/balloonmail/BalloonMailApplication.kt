@@ -1,9 +1,11 @@
 package io.huggler.balloonmail
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
+@EntityScan(basePackageClasses = [BalloonMailApplication::class])
+@SpringBootApplication(scanBasePackages = ["io.huggler.balloonmail"])
 class BalloonMailApplication
 
 fun main(args: Array<String>) {
