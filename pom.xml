@@ -11,5 +11,6 @@
     <modules>
         <module>balloon-mail-core</module>
         <module>balloon-mail-domain</module>
+        <module>balloon-mail-security</module>
     </modules>
 </project>

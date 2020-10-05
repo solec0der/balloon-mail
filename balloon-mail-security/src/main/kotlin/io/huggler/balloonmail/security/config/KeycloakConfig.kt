@@ -1,4 +1,4 @@
-package io.huggler.balloonmail.config
+package io.huggler.balloonmail.security.config
 
 import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver
 import org.springframework.context.annotation.Bean
