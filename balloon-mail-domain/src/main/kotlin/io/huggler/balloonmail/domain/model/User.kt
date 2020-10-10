@@ -9,6 +9,7 @@ import javax.persistence.Table
 data class User(
         @Id
         val userId: String,
-        val preferredUsername: String,
-        val email: String
+        val email: String,
+        val firstName: String,
+        val lastName: String
 )
